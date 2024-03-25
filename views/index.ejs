@@ -1,19 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      margin: 0 auto;
+      border: 2px #be4d10 solid;
+      border-radius: 30px;
+      margin-top: 30vh;
+      gap: 5vh;
+      padding: 5%;
+      opacity: 0.6;
+      background-color: #4B2008;
+    }
+
+    form>input,form>button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form>label
+    {
+      display: none;
+    }
+
+    button
+    {
+      transition: ease 0.5;
+    }
+
+    button:hover
+    {
+      transition: ease 0.5s;
+      background-color: #be4d10;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
 
 
-    <form action="/login" method="post">
-      <label for="username"></label>
-      <input type="text" id="username" name="username">
+    #video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
 
-      <label for="password"></label>
-    </form>
-  </body>
+  
+    
+  </style>
+
+  <form action="/login" method="post">
+    <label for="username"></label>
+    <input type="text" id="username" name="username" placeholder="Username">
+
+    <label for="password"></label>
+    <input type="password" id="password" name="password" placeholder="Password">
+
+    <button type="submit">LOGIN</button>
+  </form>
+
+  <video autoplay muted loop id="video-background">
+    <source src="/images/background_video.mp4" type="video/mp4">
+  </video>
+
+
+</body>
 </html>
