@@ -1,69 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Astrodude Login</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
+
 <body>
 
-  <style>
-    form {
-      display: flex;
-      flex-direction: column;
-      width: 200px;
-      margin: 0 auto;
-      border: 2px #be4d10 solid;
-      border-radius: 30px;
-      margin-top: 30vh;
-      gap: 5vh;
-      padding: 5%;
-      opacity: 0.6;
-      background-color: #4B2008;
-    }
-
-    form>input,form>button {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    form>label
-    {
-      display: none;
-    }
-
-    button
-    {
-      transition: ease 0.5;
-    }
-
-    button:hover
-    {
-      transition: ease 0.5s;
-      background-color: #be4d10;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-
-
-    #video-background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-}
-
-  
-    
-  </style>
-
-  <form action="/login" method="post">
+  <form action="/" method="post">
     <label for="username"></label>
     <input type="text" id="username" name="username" placeholder="Username">
 
@@ -79,4 +26,5 @@
 
 
 </body>
+
 </html>
