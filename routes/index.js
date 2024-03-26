@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
 router.post("/",(req,res)=>{
   const{username,password}=req.body;
   console.log("Username : ",username);
