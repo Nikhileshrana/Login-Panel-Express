@@ -10,8 +10,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-
-
 router.post("/",(req,res)=>{
   const{username,password}=req.body;
   console.log("Username : ",username);
@@ -19,14 +17,13 @@ router.post("/",(req,res)=>{
 
   if(username=="nikhilesh" && password=="Brave222#")
   {
-    res.render("Panel");
+    const result = Math.random().toString(36).substring(2,7);
+    res.render("Panel",{passgen:result});
   }
   else
   {
     res.send("Login Failed Redirect to Login Page Re-Authentication");
-
   }
-
   console.log("Login Page");
 });
 

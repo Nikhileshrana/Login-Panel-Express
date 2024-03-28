@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrodude's Panel</title>
+</head>
+<body>
+    <h1>Password Generator</h1>
+
+    <h2 id="h2"><%=passgen%></h2>
+    <input type="text" id="myInput">
+    <button onclick="getValue()">Get Value</button>
+
+
+    <script>
+        
+
+
+        function getValue()
+        {
+        let inputval = document.getElementById("myInput");
+        console.log(inputval.value);
+
+        const passgen = Math.random().toString(36).substring(2,7);
+        const passgendoc = document.getElementById("h2");
+        passgendoc.innerHTML= passgen;
+        }
+    </script>
+
+</body>
+</html>
