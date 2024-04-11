@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrodude's Panel</title>
 </head>
+
 <body>
-    <h1>Password Generator</h1>
-
-    <h2 id="h2"><%=passgen%></h2>
-    <input type="text" id="myInput">
-    <button onclick="getValue()">Get Value</button>
-
+    <div>
+        <h1>Password Generator</h1>
+    </div>
+<div> 
+    <input type="text" id="myInput" placeholder="Range Between 3-12">
+    <button onclick="getValue()">Get My Password</button>
+    <h2 id="h2">
+    </h2>
+</div>
 
     <script>
-        
+        function getValue() {
+            let input = document.getElementById("myInput");
+        console.log(input.value);
 
-
-        function getValue()
-        {
-        let inputval = document.getElementById("myInput");
-        console.log(inputval.value);
-
-        const passgen = Math.random().toString(36).substring(2,7);
-        const passgendoc = document.getElementById("h2");
-        passgendoc.innerHTML= passgen;
+            const passgen = Math.random().toString(36).substring(2,input.value);
+            const passgendoc = document.getElementById("h2");
+            passgendoc.innerHTML = passgen;
         }
+
+
     </script>
 
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div
+        {
+            text-align: center;
+        }
+
+        h1
+        {
+            color: white;
+            display: inline;
+            padding-right:10px ;
+            padding-left:10px ;
+            border-radius: 10px;
+            background:linear-gradient(90DEG, rgb(156, 60, 60), rgb(3, 3, 47));
+        }
+
+    </style>
+
 </body>
+
 </html>
