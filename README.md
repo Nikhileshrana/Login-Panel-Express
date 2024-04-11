@@ -44,7 +44,7 @@ EXPRESS.JS , HTML , CSS , JAVASCRIPT
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/Nikhileshrana/Login-Panel-Express/main/public/images/1.png)
 
-![App Screenshot](https://)
+![App Screenshot](https://raw.githubusercontent.com/Nikhileshrana/Login-Panel-Express/main/public/images/2.png)
 
