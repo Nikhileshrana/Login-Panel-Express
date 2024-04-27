@@ -17,6 +17,8 @@ router.post("/",(req,res)=>{
 
   if(username=="astrodude" && password=="astrodude")
   {
+    console.log(username);
+    console.log(password);
     const result = Math.random().toString(36).substring(2,7);
     res.render("Panel",{passgen:result});
   }
