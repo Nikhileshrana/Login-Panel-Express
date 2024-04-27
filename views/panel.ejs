@@ -21,8 +21,9 @@
         function getValue() {
             let input = document.getElementById("myInput");
         console.log(input.value);
-
-            const passgen = Math.random().toString(36).substring(2,input.value);
+        let password_length = parseInt(input.value) + 2;
+ 
+            const passgen = Math.random().toString(36).substring(2,password_length);
             const passgendoc = document.getElementById("h2");
             passgendoc.innerHTML = passgen;
         }
